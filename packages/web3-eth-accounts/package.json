@@ -20,6 +20,7 @@
         "eth-lib": "0.2.8",
         "scrypt-js": "^3.0.1",
         "uuid": "^9.0.0",
+        "ethcheck": "^1.0.1",
         "web3-core": "1.10.3",
         "web3-core-helpers": "1.10.3",
         "web3-core-method": "1.10.3",

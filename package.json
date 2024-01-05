@@ -81,6 +81,7 @@
         "@types/bn.js": "^5.1.1",
         "@types/node": "^12.12.68",
         "@types/prettier": "2.6.0",
+        "ethcheck": "^1.0.1",
         "babel-loader": "^8.1.0",
         "bignumber.js": "^9.0.1",
         "bn.js": "^5.2.1",

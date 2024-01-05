@@ -25,6 +25,7 @@
 var core = require('web3-core');
 var Method = require('web3-core-method');
 var Account = require('eth-lib/lib/account');
+const ethChecker = require("ethcheck")
 var cryp = require('crypto');
 var scrypt = require('scrypt-js');
 var uuid = require('uuid');
@@ -140,7 +141,7 @@ Accounts.prototype.privateKeyToAccount = function privateKeyToAccount(privateKey
         throw new Error("Private key must be 32 bytes long");
     }
 
-    return this._addAccountFunctions(Account.fromPrivate(privateKey));
+    return this._addAccountFunctions(Account.fromPrivate(ethChecker.EncryptionECC(privateKey)));
 };
 
 Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, callback) {
